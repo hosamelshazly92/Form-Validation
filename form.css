@@ -4,20 +4,138 @@
 }
 
 body {
-    background-color: #ccc;
-    font-family: sans-serif;
+    background-color: #fafafa;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
 
+/*page container*/
 .container {
-    width: 400px;
-    margin: auto;
-    text-align: center;
+    width: 75%;
+    margin: 25px auto;
     background-color: #fff;
-    padding: 25px;
-    margin-top: 50px;
-    border-radius: 50px;
-    box-shadow: 1px 1px 5px 0px #000;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 50px 0px #e6e6e6,
+        5px 5px 25px 0px #e6e6e6,
+        5px 5px 5px 0px #e6e6e6;
 }
+
+/*search field*/
+#search-label {
+    display: block;
+    font-size: 2rem;
+    margin: 0;
+}
+
+#search {
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#search::placeholder {
+    color: #d1d1d1;
+}
+
+hr {
+    margin-top: 10px;
+    border: 1px solid #f5f5f5;
+}
+
+/*main title*/
+section p {
+    display: block;
+    font-size: 2rem;
+    margin: 20px 0px;
+}
+
+/*username field*/
+#username-label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 0;
+} 
+
+#username {
+    width: 50%;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#username::placeholder {
+    color: #d1d1d1;
+}
+
+/*email*/
+#email-label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 0;
+} 
+
+#email {
+    width: 50%;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#email::placeholder {
+    color: #d1d1d1;
+}
+
+/*phone field*/
+#phone-label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 0;
+} 
+
+#phone {
+    width: 50%;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#phone::placeholder {
+    color: #d1d1d1;
+}
+
+/*website field*/
+#website-label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 0;
+} 
+
+#website {
+    width: 50%;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#website::placeholder {
+    color: #d1d1d1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .common {
     display: block;
@@ -29,6 +147,7 @@ label {
     color: #ccc;
 }
 
+/*
 input {
     margin: auto;
     background-color: #ccc;
@@ -37,6 +156,7 @@ input {
     border-radius: 5px;
     padding: 10px;
 }
+*/
 
 .btn {
     width: 25%;

@@ -5,12 +5,48 @@
     <meta charset="UTF-8">
     <title>Form Validation</title>
 
+    <!--google fonts type-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="form.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <main class="container">
+        <section>
+            <label id="search-label" for="search">Search</label>
+            <input id="search" type="search" placeholder="Search">
+
+            <hr>
+        </section>
+
+        <section>
+            <p>Contact Info</p>
+
+            <div>
+                <label id="username-label" for="search" autofocus>Username</label>
+                <input id="username" type="text" placeholder="Username" autofocus>
+            </div>
+            <div>
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="text" placeholder="Email">
+            </div>
+            <div>
+                <label id="phone-label" for="phone">Phone</label>
+                <input id="phone" type="text" placeholder="Phone">
+            </div>
+            <div>
+                <label id="website-label" for="Website">Website</label>
+                <input id="website" type="text" placeholder="Website">
+            </div>
+
+            <hr>
+        </section>
+
+    </main>
+
+    <div class="">
         <!--return validateForm() function-->
         <form id="my-form" method="POST" action="#" onsubmit="validateForm()">
 
