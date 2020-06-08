@@ -20,6 +20,10 @@ body {
         5px 5px 25px 0px #e6e6e6,
         5px 5px 5px 0px #e6e6e6;
 }
+/*global margin for labels*/
+label {
+    margin: 10px;
+}
 
 /*search field*/
 #search-label {
@@ -45,7 +49,7 @@ hr {
 }
 
 /*main title*/
-section p {
+#h1 {
     display: block;
     font-size: 2rem;
     margin: 20px 0px;
@@ -56,7 +60,7 @@ section p {
     display: inline-block;
     width: 100px;
     margin-left: 0;
-} 
+}
 
 #username {
     width: 50%;
@@ -74,7 +78,7 @@ section p {
     display: inline-block;
     width: 100px;
     margin-left: 0;
-} 
+}
 
 #email {
     width: 50%;
@@ -92,7 +96,7 @@ section p {
     display: inline-block;
     width: 100px;
     margin-left: 0;
-} 
+}
 
 #phone {
     width: 50%;
@@ -110,7 +114,7 @@ section p {
     display: inline-block;
     width: 100px;
     margin-left: 0;
-} 
+}
 
 #website {
     width: 50%;
@@ -123,69 +127,80 @@ section p {
     color: #d1d1d1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.common {
+/*prefered language*/
+#language-label {
     display: block;
+    margin-left: 0;
 }
 
-label {
+#language {
+    width: 50%;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#language::placeholder {
+    color: #d1d1d1;
+}
+
+/*birth date*/
+#birth-label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 0;
+}
+
+#birth {
+    width: 50%;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 10px;
+    color: #d1d1d1;
+}
+
+/*sex*/
+#sex-label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 0;
+}
+
+#sex {
     margin: 10px;
-    font-weight: bold;
-    color: #ccc;
 }
 
-/*
-input {
-    margin: auto;
-    background-color: #ccc;
-    width: 250px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
+span {
+    color: #d1d1d1;
 }
-*/
 
-.btn {
-    width: 25%;
-    margin-top: 25px;
-    margin-bottom: 10px;
+/*button style*/
+#button {
+    width: 100%;
+    margin: 20px 0px;
     font-weight: bold;
-    font-size: 12px;
     border: none;
     border-radius: 5px;
     padding: 10px;
 }
 
-.error {
-    background-color: #f00;
-    color: #fff;
-}
-
-.msg {
-    visibility: hidden;
-}
-
+/*validation styles*/
 /*
-.div1 {
-    width: 400px;
-    margin: auto;
-    background-color: #fff;
-    padding: 25px;
-    margin-top: 50px;
-    border-radius: 50px;
-    box-shadow: 1px 1px 5px 0px #000;
+input:focus {
+    border: 4px solid #c33;
 }
 */
+
+input:focus {
+    outline: none !important;
+    box-shadow: 0 0 1px 1px #2e2e2e;
+    background-color: #fafafa;
+}
+
+
+
+
+
+
+
+

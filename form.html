@@ -14,58 +14,86 @@
 <body>
 
     <main class="container">
-        <section>
-            <label id="search-label" for="search">Search</label>
-            <input id="search" type="search" placeholder="Search">
+        <form>
+            <section>
+                <label id="search-label" for="search">Search</label>
+                <input id="search" type="search" placeholder="search" autofocus>
 
-            <hr>
-        </section>
+                <hr>
+            </section>
 
-        <section>
-            <p>Contact Info</p>
+            <section>
+                <h1 id="h1">Contact Info</h1>
 
-            <div>
-                <label id="username-label" for="search" autofocus>Username</label>
-                <input id="username" type="text" placeholder="Username" autofocus>
-            </div>
-            <div>
-                <label id="email-label" for="email">Email</label>
-                <input id="email" type="text" placeholder="Email">
-            </div>
-            <div>
-                <label id="phone-label" for="phone">Phone</label>
-                <input id="phone" type="text" placeholder="Phone">
-            </div>
-            <div>
-                <label id="website-label" for="Website">Website</label>
-                <input id="website" type="text" placeholder="Website">
-            </div>
+                <div>
+                    <label id="username-label" for="username">Username</label>
+                    <input id="username" type="text" placeholder="name surname" name="username" pattern="(.*)\s(.*)" required>
+                </div>
+                <div>
+                    <label id="email-label" for="email">Email</label>
+                    <!--email regx pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"-->
+                    <input id="email" type="email" placeholder="email@mail.com" name="email" required>
+                </div>
+                <div>
+                    <label id="phone-label" for="phone">Phone</label>
+                    <input id="phone" type="tel" placeholder="phone number" name="phone" required>
+                </div>
+                <div>
+                    <label id="website-label" for="website">website</label>
+                    <input id="website" type="text" placeholder="Website" name="website">
+                </div>
 
-            <hr>
-        </section>
+                <hr>
+            </section>
 
+            <section>
+                <h1 id="h1">Pereferences</h1>
+
+                <div>
+                    <label id="language-label" for="language">Choose</label>
+                    <input id="language" type="text" placeholder="language" name="language" list="language-data">
+
+                    <datalist id="language-data">
+                        <option value="German"></option>
+                        <option value="French"></option>
+                        <option value="Italian"></option>
+                        <option value="Spanish"></option>
+                    </datalist>
+                </div>
+
+                <hr>
+            </section>
+
+            <section>
+                <h1 id="h1">Personal Info</h1>
+
+                <div>
+                    <label id="birth-label" for="birth">Birth Date</label>
+                    <input id="birth" type="datetime-local" name="birth" min="2015-01-01T08:30" max="2025-01-01T16:30">
+                </div>
+
+                <div>
+                    <label id="sex-label">Sex</label>
+                    <input type="radio" id="sex" name="sex" name="male"><span>Male</span>
+                    <input type="radio" id="sex" name="sex" name="female"><span>Female</span>
+                </div>
+
+                <hr>
+            </section>
+
+            <section>
+                <input id="button" type="submit" value="Submit">
+            </section>
+        </form>
     </main>
 
+    <!--
     <div class="">
-        <!--return validateForm() function-->
         <form id="my-form" method="POST" action="#" onsubmit="validateForm()">
-
-            <label class="common" for="name">Username</label>
-            <input class="common" id="name" type="text" placeholder="Enter your username here" name="username">
-
-            <label class="common" for="email">Email</label>
-            <input class="common" id="email" type="text" placeholder="Enter your email here" name="email">
-
-            <input class="btn" type="submit" value="Go">
-
             <div class="msg">can't leave inputs empty</div>
         </form>
-
     </div>
-
-    <div class="">
-        <ul id="users"></ul>
-    </div>
+-->
 
     <script type="text/javascript" src="form.js"></script>
 </body></html>
