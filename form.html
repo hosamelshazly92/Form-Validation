@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+
+    <link rel="stylesheet" type="text/css" href="form.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!--return validateForm() function-->
+        <form id="my-form" method="POST" action="#" onsubmit="validateForm()">
+
+            <label class="common" for="name">Username</label>
+            <input class="common" id="name" type="text" placeholder="Enter your username here" name="username">
+
+            <label class="common" for="email">Email</label>
+            <input class="common" id="email" type="text" placeholder="Enter your email here" name="email">
+
+            <input class="btn" type="submit" value="Go">
+
+            <div class="msg">can't leave inputs empty</div>
+        </form>
+
+    </div>
+
+    <div class="">
+        <ul id="users"></ul>
+    </div>
+
+    <script type="text/javascript" src="form.js"></script>
+</body></html>
