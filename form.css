@@ -14,7 +14,7 @@ body {
     width: 75%;
     margin: 25px auto;
     background-color: #fff;
-    padding: 5%;
+    padding: 25px;
     border-radius: 5px;
     box-shadow: 5px 5px 50px 0px #e6e6e6,
         5px 5px 25px 0px #e6e6e6,
@@ -32,11 +32,11 @@ label {
 #search-label {
     display: block;
     font-size: 2rem;
-    margin: 0;
+    margin-left: 0;
 }
 
 #search {
-    width: 100%;
+    width: 75%;
     border: 1px solid #cfcfcf;
     border-radius: 5px;
     padding: 10px;
@@ -60,13 +60,13 @@ hr {
 
 /*username field*/
 #username-label {
-    display: inline-block;
+    display: block;
     width: 100px;
     margin-left: 0;
 }
 
 #username {
-    width: 50%;
+    width: 75%;
     border: 1px solid #cfcfcf;
     border-radius: 5px;
     padding: 10px;
@@ -78,13 +78,13 @@ hr {
 
 /*email*/
 #email-label {
-    display: inline-block;
+    display: block;
     width: 100px;
     margin-left: 0;
 }
 
 #email {
-    width: 50%;
+    width: 75%;
     border: 1px solid #cfcfcf;
     border-radius: 5px;
     padding: 10px;
@@ -96,13 +96,13 @@ hr {
 
 /*phone field*/
 #phone-label {
-    display: inline-block;
+    display: block;
     width: 100px;
     margin-left: 0;
 }
 
 #phone {
-    width: 50%;
+    width: 75%;
     border: 1px solid #cfcfcf;
     border-radius: 5px;
     padding: 10px;
@@ -114,13 +114,13 @@ hr {
 
 /*website field*/
 #website-label {
-    display: inline-block;
+    display: block;
     width: 100px;
     margin-left: 0;
 }
 
 #website {
-    width: 50%;
+    width: 75%;
     border: 1px solid #cfcfcf;
     border-radius: 5px;
     padding: 10px;
@@ -137,7 +137,7 @@ hr {
 }
 
 #language {
-    width: 50%;
+    width: 75%;
     border: 1px solid #cfcfcf;
     border-radius: 5px;
     padding: 10px;
@@ -149,13 +149,13 @@ hr {
 
 /*birth date*/
 #birth-label {
-    display: inline-block;
+    display: block;
     width: 100px;
     margin-left: 0;
 }
 
 #birth {
-    width: 50%;
+    width: 75%;
     border: 1px solid #cfcfcf;
     border-radius: 5px;
     padding: 10px;
@@ -196,7 +196,7 @@ input:focus {
 #invalid {
     width: 100%;
     font-size: 10px;
-/*    margin-left: 120px;*/
+    margin-top: 10px;
     color: #ff7d63;
 }
 
@@ -212,5 +212,3 @@ input:focus + #invalid {
 input:valid + #invalid {
     visibility: hidden;
 }
-
-
