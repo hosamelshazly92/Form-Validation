@@ -1,2 +1,2 @@
 # From-Validation
-Perform form validation using HTML and CSS
+Perform validation techniques on forms using CSS and JS
