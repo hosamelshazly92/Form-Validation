@@ -27,20 +27,30 @@
 
                 <div>
                     <label id="username-label" for="username">Username</label>
-                    <input id="username" type="text" placeholder="name surname" name="username" pattern="(.*)\s(.*)" required>
+                    <!--first and last name regx pattern="(.*)\s(.*)"-->
+                    <input id="username" type="text" placeholder="username" name="username" pattern="[a-zA-z]{5,}" maxlength="20" required>
+                    <div id="invalid">
+                        username between 5 - 20 letters with no spaces or numbers
+                    </div>
                 </div>
                 <div>
                     <label id="email-label" for="email">Email</label>
                     <!--email regx pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"-->
                     <input id="email" type="email" placeholder="email@mail.com" name="email" required>
+                    <div id="invalid">
+                        email only takes ' . ' and '@' as special characters
+                    </div>
                 </div>
                 <div>
                     <label id="phone-label" for="phone">Phone</label>
-                    <input id="phone" type="tel" placeholder="phone number" name="phone" required>
+                    <input id="phone" type="tel" placeholder="phone number" name="phone" pattern="[0-9]{1,10}" maxlength="10" required>
+                    <div id="invalid">
+                        phone number only takes numbers
+                    </div>
                 </div>
                 <div>
-                    <label id="website-label" for="website">website</label>
-                    <input id="website" type="text" placeholder="Website" name="website">
+                    <label id="website-label" for="website">Website</label>
+                    <input id="website" type="url" placeholder="website" name="website">
                 </div>
 
                 <hr>

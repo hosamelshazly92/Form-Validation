@@ -20,9 +20,12 @@ body {
         5px 5px 25px 0px #e6e6e6,
         5px 5px 5px 0px #e6e6e6;
 }
+
 /*global margin for labels*/
 label {
-    margin: 10px;
+    margin: 15px;
+    color: #cfcfcf;
+    font-weight: 400;
 }
 
 /*search field*/
@@ -184,23 +187,30 @@ span {
     padding: 10px;
 }
 
-/*validation styles*/
-/*
-input:focus {
-    border: 4px solid #c33;
-}
-*/
-
 input:focus {
     outline: none !important;
     box-shadow: 0 0 1px 1px #2e2e2e;
     background-color: #fafafa;
 }
 
+#invalid {
+    width: 100%;
+    font-size: 10px;
+/*    margin-left: 120px;*/
+    color: #ff7d63;
+}
 
+/*hints*/
+input + #invalid {
+    visibility: hidden;
+}
 
+input:focus + #invalid {
+    visibility: visible;
+}
 
-
-
+input:valid + #invalid {
+    visibility: hidden;
+}
 
 
