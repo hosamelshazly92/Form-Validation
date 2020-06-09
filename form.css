@@ -187,12 +187,27 @@ span {
     padding: 10px;
 }
 
+/*css validation style*/
 input:focus {
     outline: none !important;
     box-shadow: 0 0 1px 1px #2e2e2e;
     background-color: #fafafa;
 }
 
+input:invalid:focus {
+    outline: none !important;
+    box-shadow: 0 0 2px 2px #c33;
+    background-color: #fafafa;
+}
+
+#username-label::after,
+#email-label::after,
+#phone-label::after {
+    color: #c33;
+    content: "  *";
+}
+
+/*hints*/
 #invalid {
     width: 100%;
     font-size: 10px;
@@ -200,7 +215,6 @@ input:focus {
     color: #ff7d63;
 }
 
-/*hints*/
 input + #invalid {
     visibility: hidden;
 }
